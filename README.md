@@ -2,6 +2,8 @@
 
 A local educational application that makes a retrieval workflow visible. Ask an oncology or cardiology question, inspect the synthetic source excerpts, and follow the actual LangGraph nodes through retrieval, synthesis, and assurance. The CLI and Streamlit workspace use the same workflow.
 
+New to the terminology? Read [RAG vocabulary and the CareGraph example](docs/RAG_Beginners_Guide.md), a short guide connecting tokens, chunks, embeddings, vector search, scores, FAISS storage, and citations.
+
 **Synthetic education only.** This is a learning project, not a validated clinical system. Do not enter real patient data. It does not diagnose, infer stage, prescribe, or select treatment. The bundled references are original synthetic teaching content, not NCCN guidelines.
 
 ## Run on Windows
