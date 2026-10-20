@@ -1,0 +1,13 @@
+SYNTHETIC PATHOLOGY REPORT — EDUCATIONAL DEMONSTRATION ONLY
+This fictional sample contains no real patient data.
+
+Tumor site: Breast
+Histology: Invasive ductal carcinoma
+Grade: 2
+Tumor size: 18 mm
+Stage: Not provided
+ER: Positive
+PR: Positive
+HER2: Not provided
+
+This document is a parser demonstration. Missing fields remain unknown.

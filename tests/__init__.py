@@ -1,0 +1,1 @@
+"""CareGraph AI acceptance tests."""

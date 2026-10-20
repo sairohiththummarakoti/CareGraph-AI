@@ -1,0 +1,23 @@
+digraph "07_assurance_and_actions" {
+	bgcolor=white dpi=180 nodesep=.35 outputorder=edgesfirst pad=.27 rankdir=LR ranksep=.68 splines=spline
+	node [color="#88A6BC" fillcolor="#EAF3FF" fontcolor="#17324D" fontname="DejaVu Sans" fontsize=12 margin=".22,.15" penwidth=1.3 shape=box style="rounded,filled"]
+	edge [arrowsize=.7 color="#0B777E" fontcolor="#17324D" fontname="DejaVu Sans" fontsize=10 penwidth=1.5]
+	draft [label="Agent-generated draft
+Cited, not yet authorized" fillcolor="#EAF3FF"]
+	check [label="Assurance checkpoint
+Sources • version • completeness • PHI • intent" fillcolor="#FFF2DB"]
+	release [label="RELEASE
+Educational response + citations" fillcolor="#E6F6F1"]
+	revise [label="REWRITE
+Fix answer; rerun validation" fillcolor="#EAF3FF"]
+	escalate [label="ESCALATE
+Clinician reviews; no auto treatment" fillcolor="#FCEDEF"]
+	block [label="BLOCK
+Unsafe or unauthorized action" fillcolor="#FCEDEF"]
+	draft -> check
+	check -> release [label="verified low-risk"]
+	check -> revise [label=incomplete]
+	check -> escalate [label="clinical decision"]
+	check -> block [label=unsafe]
+	revise -> check [label=recheck style=dashed]
+}

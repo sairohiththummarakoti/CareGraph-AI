@@ -1,0 +1,6 @@
+flowchart LR
+    A["Approved synthetic reference files"] --> B["Load and validate"]
+    B --> C["Parse and clean"]
+    C --> D["Chunk + metadata"]
+    D --> E["Embedding model"]
+    E --> F[("FAISS index<br/>vectors + chunks + sources")]

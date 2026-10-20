@@ -1,0 +1,12 @@
+flowchart TD
+    A["Provider submits synthetic pathology report + question"] --> B["Parse report text"]
+    B --> C["Extract tumor findings and missing data"]
+    C --> D["Clinician confirms extracted facts"]
+    D --> E["Coordinator routes to guideline retrieval"]
+    F[("Existing synthetic reference index")] -. search .-> G
+    E --> G["Embed query + search index"]
+    G --> H["Retrieved passages + extracted facts update shared state"]
+    H --> I["Synthesis generates cited, bounded draft"]
+    I --> J["Assurance checks sources, policy, risk"]
+    J --> K["Clinician review"]
+    B -. "One-time upload NOT persistently indexed" .-> X["Temporary report reference"]

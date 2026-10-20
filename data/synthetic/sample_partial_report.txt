@@ -1,0 +1,13 @@
+SYNTHETIC PATHOLOGY REPORT — EDUCATIONAL DEMONSTRATION ONLY
+This fictional sample contains no real patient data.
+
+Tumor site: Lung
+Histology: Adenocarcinoma
+Grade: Not provided
+Tumor size: Not provided
+Stage: Unknown
+ER: Not provided
+PR: Not provided
+HER2: Not provided
+
+This deliberately incomplete sample demonstrates missing-data handling.

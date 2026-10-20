@@ -1,0 +1,25 @@
+SYNTHETIC EDUCATIONAL REFERENCE
+Domain: oncology
+Version: 2026-10-20.v1
+This authored tutorial material is fictional educational reference content. It is not NCCN content, a clinical guideline, or patient-specific advice.
+
+## Oncology care and shared review
+Oncology care is the field concerned with cancer and the needs of people affected by cancer. A multidisciplinary review may involve pathology, imaging, medical oncology, surgical oncology, radiation oncology, nursing, and supportive care. In this synthetic learning example, the purpose of reviewing a tumor profile is to organize explicitly reported information and identify questions for qualified clinicians. A reference excerpt does not establish a diagnosis or select a treatment. The person's goals, available records, and clinicians' assessment belong in a real care discussion.
+
+## Pathology report facts and unknowns
+A pathology report can describe a specimen, tumor site, histologic type, grade, and biomarker results. These fields have different meanings and should remain separate. An explicitly recorded value can be summarized as a report finding, while an absent, ambiguous, or unreported value remains unknown. Tumor size alone does not determine cancer stage. A missing stage must not be inferred from grade, size, or a diagnostic label. In this synthetic demonstration, extracted facts require human confirmation before they are used to retrieve reference information.
+
+## Biomarkers and interpretation
+Biomarkers are measured characteristics that may help clinicians characterize a tumor. A report may explicitly describe estrogen receptor, progesterone receptor, HER2, or other test results. The result, method, specimen context, and interpretation can matter. A positive or negative label is not a complete treatment decision. Missing or pending biomarker information should be recorded as unknown and discussed with the treating team. This synthetic reference does not provide thresholds, drug choices, regimens, or dosing instructions.
+
+## Stage and grade are distinct
+Cancer stage and tumor grade describe different aspects of a cancer assessment. Grade refers to features of cells or tissue in a pathology interpretation. Stage concerns the extent of disease as established through the appropriate clinical process. An uploaded pathology excerpt may not contain the information required for staging. This tutorial preserves an explicitly reported stage but does not calculate, diagnose, or guess a stage. When stage is absent, the educational output should identify the missing information and defer interpretation to qualified clinicians.
+
+## Cancer and cardiovascular coordination
+Cancer and heart disease can create overlapping care questions. A coordinated review may bring oncology and cardiology clinicians together to discuss the person's existing cardiovascular history, reported cancer findings, symptoms, and relevant records. The purpose of this synthetic example is to retain evidence from both domains in one educational summary. It does not decide whether a particular cancer treatment is appropriate, change cardiovascular medicines, or estimate an individual's risk. Those decisions require a clinical assessment and a shared care plan.
+
+## Supportive care and questions for the team
+Supportive care addresses the physical, emotional, and practical needs associated with cancer care. Topics for a discussion can include symptoms, daily functioning, access to care, communication preferences, and the person's goals. A care manager can help organize questions and identify gaps in the available records. In this fictional tutorial, the assistant summarizes supplied educational passages and flags unknown report fields. It cannot decide what a symptom means, whether a medicine should be changed, or which treatment should be chosen.
+
+## Educational evidence boundaries
+A synthetic oncology excerpt is a teaching aid for learning retrieval and citation. Its presence in a vector index does not make it a validated clinical guideline. Similarity scores rank passages by embedding similarity and are not confidence estimates, probabilities of diagnosis, or measures of medical correctness. A clinician-facing discussion should distinguish quoted reference content, explicitly confirmed report facts, and information that remains unknown. Unsupported statements should be removed rather than presented as evidence.

@@ -1,0 +1,40 @@
+digraph "04_langgraph_nodes_edges_state" {
+	bgcolor=white dpi=180 nodesep=.35 outputorder=edgesfirst pad=.27 rankdir=TB ranksep=.68 splines=spline
+	node [color="#88A6BC" fillcolor="#EAF3FF" fontcolor="#17324D" fontname="DejaVu Sans" fontsize=12 margin=".22,.15" penwidth=1.3 shape=box style="rounded,filled"]
+	edge [arrowsize=.7 color="#0B777E" fontcolor="#17324D" fontname="DejaVu Sans" fontsize=10 penwidth=1.5]
+	start [label="START
+User question" fillcolor="#EAF3FF"]
+	coordinator [label="NODE · Coordinator = DO
+Read question; set domains in state" fillcolor="#EAF3FF"]
+	router [label="CONDITIONAL EDGE = GO
+oncology / cardiology / both / fallback" fillcolor="#FFF2DB"]
+	oncology [label="NODE · Oncology retrieval
+Semantic search oncology index" fillcolor="#E6F6F1"]
+	cardio [label="NODE · Cardiology retrieval
+Semantic search cardiology index" fillcolor="#E6F6F1"]
+	fallback [label="NODE · Fallback
+Ask clarifying question / out of scope" fillcolor="#FCEDEF"]
+	join [label="NODE · Evidence merge / join
+Wait for selected retrieval results" fillcolor="#E6F6F1"]
+	shared [label="SHARED STATE = KNOW (not a node)
+question • domains • evidence lists" fillcolor="#FFF2DB"]
+	synthesis [label="NODE · Synthesis
+Use retrieved evidence; cite" fillcolor="#EAF3FF"]
+	end [label="END
+Answer or escalation" fillcolor="#E6F6F1"]
+	start -> coordinator
+	coordinator -> router
+	router -> oncology [label="oncology or both"]
+	router -> cardio [label="cardiology or both"]
+	router -> fallback [label=unknown]
+	oncology -> join [label="oncology branch result"]
+	cardio -> join [label="cardiology branch result"]
+	join -> synthesis
+	join -> shared [label="reads merged state" style=dashed]
+	shared -> synthesis [label="state available" style=dashed]
+	synthesis -> end
+	fallback -> end
+	hint [label="Both retrieval nodes may run in parallel.
+Merge only after selected branches finish." fillcolor="#F7F9FB" fontsize=11 shape=note]
+	hint -> join [arrowhead=none style=dotted]
+}

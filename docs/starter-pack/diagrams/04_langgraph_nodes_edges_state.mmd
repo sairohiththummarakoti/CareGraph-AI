@@ -1,0 +1,16 @@
+flowchart TD
+    START([START]) --> COORD["Coordinator node<br/>DO: inspect question; set domains"]
+    COORD --> ROUTE{Conditional edge<br/>GO: choose domain}
+    ROUTE -->|Oncology| ONC["Oncology retrieval node<br/>Search prebuilt FAISS"]
+    ROUTE -->|Cardiology| CARD["Cardiology retrieval node<br/>Search prebuilt FAISS"]
+    ROUTE -->|Both| ONC
+    ROUTE -->|Both| CARD
+    ROUTE -->|Unknown| FALL[Fallback node]
+    ONC --> JOIN["Join evidence / synthesis ready"]
+    CARD --> JOIN
+    JOIN --> SYN["Clinical synthesis node<br/>Read evidence in shared state"]
+    SYN --> END([END])
+    FALL --> END
+    STATE[("Shared State = KNOW<br/>question, domains, retrieved chunks")] -. updated .-> ONC
+    STATE -. updated .-> CARD
+    STATE -. read .-> SYN
